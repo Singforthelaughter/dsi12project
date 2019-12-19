@@ -1,4 +1,5 @@
-# ![](https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiXgbP_jsLmAhWTwjgGHcljDjMQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.insidehighered.com%2Fadmissions%2Farticle%2F2019%2F03%2F11%2Fcollege-board-calls-sat-three-countries&psig=AOvVaw0YIF6uj4b44HXt4FF36KpV&ust=1576858813708886) Project 1: Standardized Testing, Statistical Summaries and Inference
+# Project 1: Standardized Testing, Statistical Summaries and Inference
+
 
 ## Problem Statement
 
@@ -70,7 +71,7 @@ There are still potential for SAT participation rate to increase across all stat
 |**18_act_composite**|22|2|20|21|24|18|26|Distribution is not skewed|
 
 
-## Conculstion/Recommendation
+## Conclusion/Recommendation
 
 Based on the hypothesis testing, there may be a higher probability that the difference between the mean participation rate of SAT and ACT is decreasing. We also know from our dataset that the mean participation rate of ACT dropped from 65 to 61 and mean participation rate of SAT increased from 40 to 46. Hence we can infer that there is a trend in USA with more and more students taking up SAT. 
 
