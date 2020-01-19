@@ -20,55 +20,56 @@ There are still potential for SAT participation rate to increase across all stat
 
 ## Data Dictionary
 
-|Feature|Type|Dataset|Description|
-|---|---|---|---|
-|**state**|*object*|SAT|The state of USA with students participated in SAT & ACT| 
-|**17_sat_part**|*float*|SAT|The 2017 participation rate of students of each state for SAT|
-|**17_sat_ebrw**|*float*|SAT|The 2017 average score of Evidence-Based Reading and Writing for each state|
-|**17_sat_math**|*float*|SAT|The 2017 average score of Math for each state|
-|**17_sat_total**|*float*|SAT|The 2017 average total score of SAT for each state|
-|**18_sat_part**|*float*|SAT|The 2018 participation rate of students of each state for SAT|
-|**18_sat_ebrw**|*float*|SAT|The 2018 average score of Evidence-Based Reading and Writing for each state|
-|**18_sat_math**|*float*|SAT|The 2018 average score of Math for each state|
-|**18_sat_total**|*float*|SAT|The 2018 average total score of SAT for each state|
-|**17_act_part**|*float*|ACT|The 2017 participation rate of students of each state for ACT|
-|**17_act_english**|*float*|ACT|The 2017 average score of English for each state|
-|**17_act_math**|*float*|ACT|The 2017 average score of Math for each state|
-|**17_act_reading**|*float*|ACT|The 2017 average score of Reading for each state|
-|**17_act_science**|*float*|ACT|The 2017 average score of Science for each state|
-|**17_act_composite**|*float*|ACT|The2017  average composite score of ACT for each state|
-|**18_act_part**|*float*|ACT|The 2018 participation rate of students of each state for ACT|
-|**18_act_english**|*float*|ACT|The 2018 average score of English for each state|
-|**18_act_math**|*float*|ACT|The 2018 average score of Math for each state|
-|**18_act_reading**|*float*|ACT|The 2018 average score of Reading for each state|
-|**18_act_science**|*float*|ACT|The 2018 average score of Science for each state|
-|**18_act_composite**|*float*|ACT|The2018  average composite score of ACT for each state|
+| Feature              | Type   | Dataset | Min | Max  | Description                                                                  |
+|----------------------|--------|---------|-----|------|------------------------------------------------------------------------------|
+| state                | object | SAT     | \-  | \-   | The state of USA with students participated in SAT & ACT                     |
+| sat17\_participation | float  | SAT     | 0   | 100  | The 2017 participation rate of students of each state for SAT                |
+| sat17\_ebrw          | float  | SAT     | 200 | 800  | The 2017 average score of Evidence\-Based Reading and Writing for each state |
+| sat17\_math          | float  | SAT     | 200 | 800  | The 2017 average score of Math for each state                                |
+| sat17\_total         | float  | SAT     | 400 | 1600 | The 2017 average total score of SAT for each state                           |
+| sat18\_participation | float  | SAT     | 0   | 100  | The 2018 participation rate of students of each state for SAT                |
+| sat18\_ebrw          | float  | SAT     | 200 | 800  | The 2018 average score of Evidence\-Based Reading and Writing for each state |
+| sat18\_math          | float  | SAT     | 200 | 800  | The 2018 average score of Math for each state                                |
+| sat18\_total         | float  | SAT     | 400 | 1600 | The 2018 average total score of SAT for each state                           |
+| act17\_participation | float  | ACT     | 0   | 100  | The 2017 participation rate of students of each state for ACT                |
+| act17\_english       | float  | ACT     | 1   | 36   | The 2017 average score of English for each state                             |
+| act17\_math          | float  | ACT     | 1   | 36   | The 2017 average score of Math for each state                                |
+| act17\_reading       | float  | ACT     | 1   | 36   | The 2017 average score of Reading for each state                             |
+| act17\_science       | float  | ACT     | 1   | 36   | The 2017 average score of Science for each state                             |
+| act17\_composite     | float  | ACT     | 1   | 36   | The2017  average composite score of ACT for each state                       |
+| act18\_participation | float  | ACT     | 0   | 100  | The 2018 participation rate of students of each state for ACT                |
+| act18\_english       | float  | ACT     | 1   | 36   | The 2018 average score of English for each state                             |
+| act18\_math          | float  | ACT     | 1   | 36   | The 2018 average score of Math for each state                                |
+| act18\_reading       | float  | ACT     | 1   | 36   | The 2018 average score of Reading for each state                             |
+| act18\_science       | float  | ACT     | 1   | 36   | The 2018 average score of Science for each state                             |
+| act18\_composite     | float  | ACT     | 1   | 36   | The2018  average composite score of ACT for each state                       |
+
 
 
 ## Distributions Summary
 
 |Variable|Mean|STD|Q1|Q2|Q3|Min|Max|Description based on statistics & boxplot|
 |---|---|---|---|---|---|---|---|---|
-|**17_sat_part**|40|35|4|38|66|2|100|Distribution is skewed to the right with a wide spread data from mean|
-|**17_sat_ebrw**|569|45|533|559|613|482|644|Distribution is slightly skewed to the left|
-|**17_sat_math**|557|47|523|548|599|468|651|Distribution is not skewed|
-|**17_sat_total**|1126|93|1055|1107|1212|950|1295|Distribution is not skewed|
-|**18_sat_part**|46|37|5|52|78|2|100|Distribution is skewed to the right with a wide spread data from mean|
-|**18_sat_ebrw**|564|48|535|552|611|180|643|Distribution is slightly skewed to the left|
-|**18_sat_math**|556|48|522|544|594|480|655|Distribution is not skewed|
-|**18_sat_total**|1120|94|1058|1098|1204|977|1298|Distribution is not skewed|
-|**17_act_part**|65|32|31|69|100|8|100|Distribution is skewed to the left with a wide spread data from mean|
-|**17_act_english**|21|2|19|20|23|16|26|Distribution is not skewed|
-|**17_act_math**|21|2|19|21|23|18|25|Distribution is slightly skewed to the right|
-|**17_act_reading**|22|2|21|22|24|18|26|Distribution is slightly skewed to the left|
-|**17_act_science**|22|2|20|21|23|18|25|Distribution is not skewed|
-|**17_act_composite**|22|2|20|21|24|18|26|Distribution is not skewed|
-|**18_act_part**|61|34|29|66|100|7|100|Distribution is skewed to the left with a wide spread data from mean|
-|**18_act_english**|21|3|19|20|24|17|26|Distribution is not skewed|
-|**18_act_math**|21|2|19|21|23|18|25|Distribution is slightly skewed to the right|
-|**18_act_reading**|22|2|21|22|24|18|26|Distribution is not skewed|
-|**18_act_science**|21|2|18|20|21|23|25|Distribution is not skewed|
-|**18_act_composite**|22|2|20|21|24|18|26|Distribution is not skewed|
+|**sat17_participation**|40|35|4|38|66|2|100|Distribution is skewed to the left with a wide spread data from mean|
+|**sat17_ebrw**|569|45|533|559|613|482|644|Distribution is slightly skewed to the right|
+|**sat17_math**|557|47|523|548|599|468|651|Distribution is not skewed|
+|**sat17_total**|1126|93|1055|1107|1212|950|1295|Distribution is not skewed|
+|**sat17_participation**|46|37|5|52|78|2|100|Distribution is skewed to the left with a wide spread data from mean|
+|**sat18_ebrw**|564|48|535|552|611|180|643|Distribution is slightly skewed to the right|
+|**sat18_math**|556|48|522|544|594|480|655|Distribution is not skewed|
+|**sat18_total**|1120|94|1058|1098|1204|977|1298|Distribution is not skewed|
+|**act17_participation**|65|32|31|69|100|8|100|Distribution is skewed to the right with a wide spread data from mean|
+|**act17_english**|21|2|19|20|23|16|26|Distribution is not skewed|
+|**act17_math**|21|2|19|21|23|18|25|Distribution is slightly skewed to the left|
+|**act17_reading**|22|2|21|22|24|18|26|Distribution is slightly skewed to the right|
+|**act17_science**|22|2|20|21|23|18|25|Distribution is not skewed|
+|**act17_composite**|22|2|20|21|24|18|26|Distribution is not skewed|
+|**act18_participation**|61|34|29|66|100|7|100|Distribution is skewed to the right with a wide spread data from mean|
+|**act18_english**|21|3|19|20|24|17|26|Distribution is not skewed|
+|**act18_math**|21|2|19|21|23|18|25|Distribution is slightly skewed to the left|
+|**act18_reading**|22|2|21|22|24|18|26|Distribution is not skewed|
+|**act18_science**|21|2|18|20|21|23|25|Distribution is not skewed|
+|**act18_composite**|22|2|20|21|24|18|26|Distribution is not skewed|
 
 
 ## Conclusion/Recommendation
